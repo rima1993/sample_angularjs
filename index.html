@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="todo.js"></script>
+</head>
+
+<body ng-app='toDoList' ng-controller='toDoListCtrl'>
+ 
+  <div ng-repeat='task in taskList'>
+    
+    <input type='checkbox' ng-model='task.done' />
+    
+    <span ng-class='{done: task.done}'>{{task.task}}</span>
+  </div>
+<div class='input-form'>
+  <input type='text' ng-model='newTask' />
+  <button ng-click='addTask(newTask)'>Add</button>
+  <button ng-click="removeTask()">Remove Task</button>
+</div>
+
+
+
+</body>
+
+</html>

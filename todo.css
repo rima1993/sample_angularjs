@@ -1,0 +1,15 @@
+body
+{
+  background-color: #214bd4;
+}
+
+.done
+{
+  text-decoration: line-through;
+}
+
+.input-form
+{
+  border-top: dashed 3px;
+  padding-top: 1em;
+}
